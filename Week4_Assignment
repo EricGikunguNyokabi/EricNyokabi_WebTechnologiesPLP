@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Skills</title>
+    <style>
+        body{
+            color: rgb(252, 252, 241);
+            margin-top: 0px;
+            background-color: rgb(223, 219, 219);
+        }
+        header h1{
+            text-align: center;
+            /* Apply a background color and add padding for style. */
+            background: linear-gradient(to right,rgba(110,210,100,1),rgba(10,120,100,1));
+            padding: 20px;
+            margin: 0px;
+            font-size: 3em;
+        }
+        /* Media queries for responsiveness */
+        #introduction{
+            border: 2px solid red;
+            margin-top: 50px;
+            margin-left: 10%;
+            margin-right: 10%;
+            padding: 30px;
+            text-align: center;
+            font-size: 1.7em;
+            background: linear-gradient(to right,rgba(110,110,110,1),rgba(100,100,100,.8));
+        }
+        #introduction h2{
+            margin-top: 0px;
+        }
+        #introduction p{
+            text-align: justify;
+        }
+        #skills{
+            border: 1px solid blueviolet;
+            background-color: black;
+            margin-top: 20px;
+            margin-left: 10%;
+            margin-right: 10%;
+            padding: 0px 0px 0px 50px;  /* TRBL*/
+            /* justify-content: center; */
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            font-size: 1.7em;
+        }
+        #skills ul li{
+            margin-top: 20px;
+        }
+        #contacts{
+            margin: 20px 10px 30px 10px;
+            padding: 20px 0px 20px 50px;
+            background-color: rgb(241, 155, 74);
+            color: black;
+            text-align: center;
+            font-size: 1.5em;
+        }
+        #contacts li{
+            padding-left: 50px;
+            padding-right: 50px;
+            display: inline-block;
+            padding-top: 10px;
+            
+        }
+        #contacts img{
+            width: 20px;
+            padding-right: 10px;
+            vertical-align: middle;
+        }
+        @media (max-width: 768px) {
+            #introduction, #skills, #contacts {
+                margin: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Create a header with your name. -->
+    <header>
+        <h1 style="font-variant: small-caps; font-size: 5em;">Eric Nyokabi</h1>
+    </header>
+    <!-- Add an "Introduction" section below the header.
+Introduce yourself with a paragraph.
+Use a different background color and set margins for spacing. -->
+<section id="introduction">
+    <h2>PROFESSIONAL OBJECTIVE</h2>
+    <p>
+        A dedicated and results-oriented individual with a strong academic foundation in Statistics and Programming, holding a BSc degree. Currently pursuing a career transition into Software Development Full Stack, with expertise in web design and development using HTML, CSS, and Bootstrap to create visually appealing and responsive user interfaces. Proficient in back-end development utilizing Python with Flask framework, coupled with Jinja engine for templating dynamic content. Skilled in database management with expertise in SQL, ensuring efficient data storage and retrieval.
+        <br><br>
+        Additionally, experienced in Data Science, proficient in analyzing data using Python libraries and adept at displaying data effectively with well-defined explanations. <br>
+        Currently expanding expertise in Mobile Application Development using Android and Kotlin, as well as having a background in Dart with Flutter. Committed to continuous learning and leveraging technical skills to contribute effectively to innovative software projects. Passionate about delivering high-quality solutions that meet both user and business requirements while remaining adaptable and open to new challenges and technologies.
+    </p>
+</section>
+
+<!-- Skills Display:
+Create a "Skills" section.
+List your skills with bordered list items and padding.
+Adjust margins for spacing between skills. -->
+<section id="skills">
+    <h2>MY SKILLS</h2>
+    <ul>
+        <li>
+            Proficient in developing efficient and scalable web applications, adept at ensuring data integrity and optimizing query performance.
+        </li>
+        <li>
+            Experienced in managing databases effectively for web development and proficient in data manipulation using SQL.
+        </li>
+        <li>
+            Skilled in utilizing the Microsoft Office suite and LibreOffice (Linux Mint) for various tasks including document creation, data analysis, and presentations.
+        </li>
+        <li>
+            Possess strong analytical skills, capable of identifying and solving complex problems efficiently, contributing to effective decision-making processes.
+        </li>
+        <li>
+            Excellent written and verbal communication skills, enabling clear and effective communication with team members, stakeholders, and clients.
+        </li>
+    </ul>
+</section>
+<!-- Contact Information:
+Design a contact section at the bottom.
+Include email and social media links.
+Apply a background color and use padding for clarity. -->
+<section id="contacts">
+    <div style="border-radius:150px; border: 1px solid yellow;">
+        <ul style="list-style: none;">
+            <li<img src="images/mail.jpg" alt=""></a><a href="mailto:eric@gmail.com">Email: eric@mail.com</a> </li>
+            <li><img src="images/x.png" alt=""><a href="#">X_handle</a> <br></li>
+            <li><img src="images/whatsapp.jpeg" alt=""><a href="tel:+254701838170">WhatsApp</a> <br></li>
+            <li><img src="images/facebook.svg" alt=""></a><a href="tel:+254701838170">Facebook </a> <br></li>
+        </ul>
+    </div>
+</section>
+</body>
+</html>
+
